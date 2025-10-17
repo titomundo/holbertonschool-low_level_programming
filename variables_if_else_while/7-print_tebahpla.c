@@ -1,5 +1,4 @@
-#include <stdlib.h>
-#include <time.h>
+#include <string.h>
 #include <stdio.h>
 
 /**
@@ -11,9 +10,10 @@ int main(void)
 {
 	char alphabet[] = "abcdefghijklmnopqrstuvwxyz";
 	int i;
+	int len = strlen(alphabet) - 1 ;
 
-	for (i = 0; i <= 26; i++)
-		putchar(alphabet[26 - i]);
+	for (i = 0; i <= len; i++)
+		putchar(alphabet[len - i]);
 
 	putchar('\n');
 
