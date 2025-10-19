@@ -23,8 +23,8 @@ void times_table(void)
 					_putchar(' ');
 					_putchar(' ');
 
-				}	
-				_putchar('0' + value);	
+				}
+				_putchar('0' + value);
 			}
 			else if (value >= 10)
 			{
