@@ -22,11 +22,11 @@ void times_table(void)
 					_putchar(',');
 					_putchar(' ');
 					_putchar(' ');
-
 				}
+				
 				_putchar('0' + value);
 			}
-			else if (value >= 10)
+			else
 			{
 				last = value % 10;
 				_putchar(',');
