@@ -8,11 +8,14 @@
 void more_numbers(void)
 {
 	char numbers[] = "01234567891011121314\n";
-	int i;
+	int i, j;
 
-	for (i = 0; i < 21; i++)
+	for (j = 0; j < 10; j++)
 	{
-		_putchar(numbers[i]);
+		for (i = 0; i < 21; i++)
+		{
+			_putchar(numbers[i]);
+		}
 	}
 
 	_putchar('\n');
