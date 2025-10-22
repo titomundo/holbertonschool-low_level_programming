@@ -7,7 +7,7 @@
  */
 void more_numbers(void)
 {
-	char numbers = "01234567891011121314\n";
+	char numbers[] = "01234567891011121314\n";
 	int i;
 
 	for (i = 0; i < 21; i++)
