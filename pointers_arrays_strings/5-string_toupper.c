@@ -4,7 +4,7 @@
  * string_toupper - changes all lowercase letters in a string to uppercase
  * @s: string to convert
  *
- * Return: void
+ * Return: char*
  */
 char *string_toupper(char *s)
 {
