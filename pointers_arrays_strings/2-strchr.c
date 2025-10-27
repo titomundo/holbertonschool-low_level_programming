@@ -13,16 +13,15 @@ char *_strchr(char *s, char c)
 	int i = 0;
 	char *v = 0;
 
-	while (s[i] != '\0')
+	while (1)
 	{
-		if (s[i] == c)
+		if ((s[i] == '\0' && c != '\0') || i > 9999)
+			break;
+		else if (s[i] == c)
 			return (&s[i]);
 
 		i++;
 	}
-
-	if (c == '\0')
-		return (&s[i + 1]);
 
 	return (v);
 }
