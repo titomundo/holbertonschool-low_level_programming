@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _strchr - returns the length of a prefix substring
+ * _strspn - returns the length of a prefix substring
  * @s: source
  * @accept: chars to search for
  *
@@ -17,16 +17,16 @@ unsigned int _strspn(char *s, char *accept)
 	while (s[i] != '\0')
 	{
 		j = 0;
-		while(accept[j] != '\0')
+		while (accept[j] != '\0')
 		{
 			if (s[i] == accept[j])
-			{
-				i++;
-				size++;
-			}
+				break;
 
 			j++;
 		}
+
+		if (!accept[j])
+			return (i);
 
 		i++;
 	}
