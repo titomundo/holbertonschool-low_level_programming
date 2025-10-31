@@ -76,14 +76,20 @@ void _print_err(void)
  */
 int main(int argc, char *argv[])
 {
-	int a = _atoi(argv[1]);
-	int b = _atoi(argv[2]);
-	int mul = a * b;
+	int a;
+	int b;
+	int mul;
 
-	if (argc != 3)
+	if (argc < 3 || argc > 3)
 	{
 		_print_err();
 		return (1);
+	}
+	else
+	{
+		a = _atoi(argv[1]);
+		b = _atoi(argv[2]);
+		mul = a * b;
 	}
 
 	if (mul < 0)
