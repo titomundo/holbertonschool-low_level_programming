@@ -30,7 +30,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	unsigned int i, j;
 	unsigned int len1 = _len(s1);
 	unsigned int len2 = _len(s2);
-	char *str = malloc(len1 + len2 + 1);
+	char *str = malloc((len1 + len2 + 1) * sizeof(char));
 
 	if (str == NULL || n < 1)
 		return (0);
