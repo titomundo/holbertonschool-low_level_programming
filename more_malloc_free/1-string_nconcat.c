@@ -27,9 +27,7 @@ unsigned int _len(char *s)
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	unsigned int i, j;
-	unsigned int len1 = _len(s1);
-	unsigned int len2 = _len(s2);
+	unsigned int i, j, len1, len2;
 	char *str;
 
 	if (s1 == NULL)
@@ -37,6 +35,9 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	if (s2 == NULL)
 		s2 = "";
+
+	len1 = _len(s1);
+	len1 = _len(s2);
 
 	if (n > len2)
 		n = len2;
