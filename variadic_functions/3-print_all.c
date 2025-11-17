@@ -18,7 +18,7 @@ void print_all(const char * const format, ...)
 		j = 0;
 		while (opts[j])
 		{
-			if (format[i] == opts[j])
+			if (format[i] == opts[j] && i != 0)
 			{
 				printf(", ");
 				break;
