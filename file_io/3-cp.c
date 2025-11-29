@@ -37,7 +37,7 @@ void handle_err(int exit_code, char *filename, int fd_err)
  */
 int main(int argc, char *argv[])
 {
-	int fd_out, fd_in, close_err;
+	int fd_out, fd_in;
 	ssize_t bytes_wr, MAX_BUF_SIZE = 1024;
 	ssize_t bytes_rd = MAX_BUF_SIZE;
 	char buf[1024];
