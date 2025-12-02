@@ -1,3 +1,5 @@
+#include "hash_tables.h"
+
 /**
  * hash_djb2 - hashes a string using a magic algorithm
  * @str: string to hash
